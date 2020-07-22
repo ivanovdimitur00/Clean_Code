@@ -1,0 +1,93 @@
+=========================================================
+лекция 1 - въведение
+
+KLOC - Kilo Lines Of Code (source)
+
+What Is Clean Code?
+
+
+• Ron Jeffries, author of Extreme Programming Installed:
+
+– Runs all the tests; 								(!?)
+– Contains no duplication; 							(няма дублиране, всичко да може да се свежда до общи методи и функции)
+– Expresses all the design ideas that are in the system; 		 (програмата извършва каквото е необходимо с достъпните инструменти и ресурси)
+– Minimizes the number of entities 
+such as classes, methods, functions, and the like.	(по-малко неща == по-добра поддръжка, повече компактност; точно това, което програмата изисква)
+
+съвети:
+
+- винаги да мислим за имплементацията в момента на разработка
+- ако нещо не е наред, измисляй решения и ги имплементирай. Не го изоставяй
+
+=========================================================
+лекция 2 - Системи за сорс контрол (VCS)
+
+- организация на комплексни и голям на брой документи
+- нуждата да се следят версии (snapshots)
+- разпространение от локално -> глобално (към потребителя)
+- помага за екипната работа
+
++ има нужда от информация за информацията (метаданни)
+
+
+ВИДОВЕ:
+(* вид, + плюсове, - недостатъци)
+
+* cloud услуги (Google Drive, Dropbox)
+
++ подходящи за множества от файлове и малки проекти , които няма да се променят
+
+- липсват версии (update-ва се на момента, няма връщане назаде)
+
+
+* централизирани VCS (SVN == Apache Subversion, CVS)
+
++ главен сървър, съхраняващ информацията, която се и обработва
+
+- пази промени, но се случват и конфликти
+- ограничение в пратената информация
+- трудно за следене.
+
+
+* децентрализирани VCS (Git, Mercurial)
+
++ позволява "клонинги" на сървъра, които са локални за потребителя.
++ позволява екипна работа, без манипулацията на основното хранилище.
++ възможност за работа офлайн (като после се синхронизира)
+
+
+
+ОСНОВНИ КОМАНДИ:
+(-<something> / <something> - инструкции, които могат да се добавят към командата)
+( Структура: Workspace <---> index (staged files) <---> local repo (of user) <---> remote repo (root) )
+(start cmd line with git?)
+
+
+update - synchronizes information with the server (the root repository)
+
+add - selects (stages) files to be commited
+-a == --all -  --||--
+
+commit - adds information to his local repository of user
+-a == --all - selects all files to be added
+-m "<random message>" - adds a message to the commited files
+
+push - add information to server
+pull - requests server to send information to user
+rebase - same as pull (?)
+
+checkout - removes files which have been staged
+HEAD - reverts changes that have been commited to local repo
+
+diff - compares files that have been staged
+HEAD - compares files with local repo
+
+=========================================================
+
+
+
+
+
+
+
+

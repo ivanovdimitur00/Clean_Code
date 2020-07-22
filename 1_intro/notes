@@ -1,0 +1,21 @@
+=========================================================
+лекция 1 - въведение
+
+KLOC - Kilo Lines Of Code (source)
+
+What Is Clean Code?
+
+
+• Ron Jeffries, author of Extreme Programming Installed:
+
+– Runs all the tests; 								(!?)
+– Contains no duplication; 							(няма дублиране, всичко да може да се свежда до общи методи и функции)
+– Expresses all the design ideas that are in the system; 		 (програмата извършва каквото е необходимо с достъпните инструменти и ресурси)
+– Minimizes the number of entities 
+such as classes, methods, functions, and the like.	(по-малко неща == по-добра поддръжка, повече компактност; точно това, което програмата изисква)
+
+съвети:
+
+- винаги да мислим за имплементацията в момента на разработка
+- ако нещо не е наред, измисляй решения и ги имплементирай. Не го изоставяй
+=========================================================
